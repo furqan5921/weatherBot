@@ -11,7 +11,7 @@ function App() {
     e.preventDefault()
     setLoading(true)
     try {
-      const res = await fetch("http://localhost:8081/chat", {
+      const res = await fetch("https://weather-bot-oasx.onrender.com/chat", {
         method: "POST",
         body: JSON.stringify({ message }),
         headers: {
