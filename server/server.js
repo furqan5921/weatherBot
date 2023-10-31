@@ -18,6 +18,7 @@ server.post("/chat", async (req, res) => {
         res.send(chatArray)
     } catch (error) {
         console.log("error sending message")
+        res.status(500).send(error.message)
     }
 })
 
